@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Control Panel</title>
+</head>
+
+
+<body class="w3-sand  w3-large">
+    <!-- Links (sit on top) -->
+    <div class="w3-top sticky-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s4">
+                <a href="/" class="w3-button w3-block w3-black">Ver los animales</a>
+            </div>
+            <div class="w3-col s4">
+                <a href="/store/stores" class="w3-button w3-block w3-black">Puntos de venta</a>
+            </div>
+            <div class="w3-col s4">
+                <a href="/signout" class="w3-button w3-block w3-black">Cerrar sesion</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="w3-container">
+            <div class="w3-container" id="menu">
+                <div class="w3-content" style="max-width:1200px">
+                    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Panel de control de tiendas</span>
+                    </h5>
+                    <div id="cats" class="w3-container w3-sand menu w3-padding-48 w3-card w3-responsive">
+                        <table class="w3-table-all w3-hoverable">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Direccion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr th:each="sotre : ${stores}">
+                                    <td th:text="${sotre.nombre}"></td>
+                                    <td th:text="${sotre.direccion}"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js">   </script>
+    <script src="jwt.js">    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>S A A D</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<body class="w3-sand  w3-large">
+    <!-- Links (sit on top) -->
+    <div class="w3-top sticky-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s2">
+                <a href="/" class="w3-button w3-block w3-black">Ver los animales</a>
+            </div>
+            <div class="w3-col s2">
+                <a href="/stores" class="w3-button w3-block w3-black">Puntos de venta</a>
+            </div>
+            <div class="w3-col s2">
+                <a href="/register" class="w3-button w3-block w3-black">Registrarse</a>
+            </div>
+            <div class="w3-col s2">
+                <a href="/login" class="w3-button w3-block w3-black">Iniciar sesion</a>
+            </div>
+            <div class="w3-col s2">
+                <a href="/control" class="w3-button w3-block w3-black">Staff</a>
+            </div>
+            <form class="w3-col s2" th:action="@{/logout}" method="POST">
+                <input class="w3-button w3-block w3-black" type="submit" value="Cerrar sesion">
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-3 align-items-center justify-content-center">
+            <div class="card col-4 shadow-lg rounded">
+                <div class="card-header">
+                    <h5>Acceso denegado</h5>
+                </div>
+                <div class="card-body">
+                    Lo que es el acceso, valgame la redundancia lo tiene prohibido, lo que se dice forbiden 403.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js">   </script>
+
+    <script src="jwt.js">    </script>
+</body>
+
+</html>
