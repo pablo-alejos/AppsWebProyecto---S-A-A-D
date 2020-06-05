@@ -11,26 +11,17 @@
 
 <body class="w3-sand  w3-large">
     <!-- Links (sit on top) -->
-    <div class="w3-top sticky-top mb-5">
+    <div class="w3-top sticky-top">
         <div class="w3-row w3-padding w3-black">
-            <div class="w3-col s2">
-                <a href="/" class="w3-button w3-block w3-black">Ver los animales</a>
+            <div class="w3-col s4">
+                <a href="/control" class="w3-button w3-block w3-black">Panel de control</a>
             </div>
-            <div class="w3-col s2">
-                <a href="/stores" class="w3-button w3-block w3-black">Puntos de venta</a>
+            <div class="w3-col s4">
+                <a href="/store/stores" class="w3-button w3-block w3-black">Ver sitio</a>
             </div>
-            <div class="w3-col s2">
-                <a href="/register" class="w3-button w3-block w3-black">Registrarse</a>
+            <div class="w3-col s4">
+                <a href="/signout" class="w3-button w3-block w3-black">Cerrar sesion</a>
             </div>
-            <div class="w3-col s2">
-                <a href="/login" class="w3-button w3-block w3-black">Iniciar sesion</a>
-            </div>
-            <div class="w3-col s2">
-                <a href="/control" class="w3-button w3-block w3-black">Staff</a>
-            </div>
-            <form class="w3-col s2" th:action="@{/logout}" method="POST">
-                <input class="w3-button w3-block w3-black" type="submit" value="Cerrar sesion">
-            </form>
         </div>
     </div>
 
